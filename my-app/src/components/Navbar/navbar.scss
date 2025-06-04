@@ -1,0 +1,114 @@
+@import "../../App.scss";
+
+.nav {
+  z-index: 4;
+  width: 100%;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+              rgba(0, 0, 0, 0.07) 0px 2px 2px,
+              rgba(0, 0, 0, 0.07) 0px 4px 4px,
+              rgba(0, 0, 0, 0.07) 0px 8px 8px,
+              rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  display: flex;
+  background-image: url("../../../public/wood_background.jpg");
+  background-size: cover;
+  background-position: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 0px 80px 0px;
+}
+
+.nav-overlay {
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  background-color: rgba(195, 195, 195, 0.077);
+  position: fixed;
+}
+
+.nav__burger {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translateX(-200%);
+  transition: all 0.2s ease-in-out;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  border: 1px solid $color-secondary;
+  border-width: 0px 0px 1px 0px;
+  padding: 50px 0px 0px 0px;
+
+  * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+  }
+  
+  &.open {
+    transform: translateX(0%);
+  }
+}
+
+.nav__burger-button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.nav__brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  p {
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $color-secondary;
+  }
+  img {
+    display: block;
+    max-height: 140px;
+    margin: 0px 20px 0px 0px;
+    padding: 4px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateY(50px);
+  }
+
+  &.large img{
+    display: block;
+  }
+}
+
+.nav__auth {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+  height: 40%;
+  padding: 15px;
+  background-color: $color-secondary;
+  border-radius: 50%px;
+  transition: all ease 0.2s;
+
+  p {
+    color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__brand {
+    p {
+      display: none;
+    }
+  }
+}
+
+
+

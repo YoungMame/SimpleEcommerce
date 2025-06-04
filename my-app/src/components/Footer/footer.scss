@@ -1,0 +1,44 @@
+@import "../../App.scss";
+
+footer {
+	width: 100%;
+	border: 1px solid $color-tertiary;
+	border-width: 1px 0px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	.footer-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 10px 0px;
+		.footer-list__title {
+			font-size: larger;
+			color: $color-quaternary;
+		}
+	}
+	.footer-contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 80px;
+		h4 {
+			font-size: large;
+		}
+		a {
+			border-radius: 0px;
+			padding: 10px;
+			background-color: $color-tertiary;
+			color: white;
+		}
+	}
+}
+
+@media (max-width: 769px) {
+	footer {
+		flex-direction: column;
+	}
+}

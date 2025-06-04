@@ -1,0 +1,193 @@
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+$color-success: #6FCD73 ;
+$color-ok: royalblue ;
+$color-neutral: #A5A29E ;
+$color-warning: #F6D14D ;
+$color-error: #F45E5E ;
+
+$color-primary: #38170E ; 
+$color-secondary: #000000 ; 
+$color-tertiary: #A5A29E ; 
+$color-quaternary: #080708 ;
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    color: #000000;
+    text-decoration: none;
+    border: 0px solid black;
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+h5 {
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+button {
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.success {
+    color: white;
+    background-color: $color-success;
+}
+
+.ok {
+    color: white;
+    background-color: $color-ok;
+}
+
+.neutral {
+    color: white;
+    background-color: $color-neutral;
+}
+
+.warning {
+    color: white;
+    background-color: $color-warning;
+}
+
+.error {
+    color: white;
+    background-color: $color-error;
+}
+
+.primary {
+    color: white;
+    background-color: $color-primary;
+}
+
+.secondary {
+    color: white;
+    background-color: $color-secondary;
+}
+
+.tertiary {
+    color: white;
+    background-color: $color-tertiary;
+}
+
+.quaternary {
+    color: white;
+    background-color: $color-quaternary;
+}
+
+.bg-primary {
+    background-color: $color-primary;
+}
+
+.bg-secondary {
+    background-color: $color-secondary;
+}
+
+.bg-tertiary {
+    background-color: $color-tertiary;
+}
+
+.bg-quaternary {
+    background-color: $color-quaternary;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.dp-block {
+    display: block;
+}
+
+.dp-inline {
+    display: inline;
+}
+ 
+.dp-flex {
+    display: flex;
+}
+
+.fd-collumn {
+    flex-direction: column;
+}
+
+.fd-row {
+    flex-direction: row;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.active {
+    font-weight: bold;
+}
+
+span {
+    text-decoration: underline;
+}

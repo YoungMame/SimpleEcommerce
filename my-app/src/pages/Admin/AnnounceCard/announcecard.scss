@@ -1,0 +1,33 @@
+@import "../../../App.scss";
+
+.announce-card {
+	width: 90%;
+	background-color: white;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px; 
+	display: flex;
+	flex-direction: column ;
+	overflow: scroll;
+	.announce-card__infos {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		input {
+			background-color: blanchedalmond;
+			height: 25px;
+			border-radius: 3px;
+		}
+		img {
+			width: 20%;
+		}
+	}
+	.announce-card__close {
+		cursor: pointer;
+		padding: 5px;
+	}
+}

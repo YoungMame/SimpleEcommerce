@@ -1,0 +1,28 @@
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+my-app/build
+
+# Dependency directories
+**/node_modules/
+**/.npm
+
+# Confidential files
+
+**/.env
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/.env.local
+
+# Mac OS
+**/.DS_Store
+
+# Code editor
+**/.vscode/
+
+# Storage 
+./my-server/uplaods/images/*
+
+# Streamables
+# my-server/uploads/images/*
+
+

@@ -1,0 +1,107 @@
+@import "../../App.scss";
+
+form {
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adress-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: fit-content;
+    padding: 30px;
+    * {
+        padding: 10px;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        input {
+            border: 1px solid $color-tertiary;
+        }
+        select {
+            border: 1px solid $color-tertiary;
+        }
+    }
+}
+
+.basket__container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    .basket__infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > * {
+            padding: 10px;
+            margin: 10px 0px;
+            border: 1px solid $color-tertiary;
+            width: 200px;
+        }
+        .basket__infos__price {
+            > * {
+                font-size: small;
+            }
+            .basket__infos__price__total {
+                font-size: medium;
+            }
+        }
+        .basket__infos__products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+            .basket__infos__products__product {
+                margin: 5px 0px;
+                .basket__infos__products__product__title {
+                    font-size: smaller;
+                    text-decoration: underline $color-tertiary;
+                }
+                .basket__infos__products__product__ref {
+                    font-size: x-small;
+                    color: $color-tertiary;
+                }
+                .basket__infos__products__product__quantity {
+                    font-size: smaller;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    form {
+        flex-direction: column;
+    }
+    .basket__container {
+        flex-direction: column;
+    }
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    button {
+        margin: 30px auto;
+    }
+}

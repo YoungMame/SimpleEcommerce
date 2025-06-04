@@ -1,0 +1,23 @@
+@import "../../../App.scss";
+
+.user-card {
+	width: 90%;
+	background-color: white;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	.user-card__infos {
+		padding: 10px;
+		.user-card__infos__email {
+			background-color: blanchedalmond;
+		}
+	}
+	.user-card__close {
+		cursor: pointer;
+		padding: 5px;
+	}
+}

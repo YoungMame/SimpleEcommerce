@@ -1,0 +1,59 @@
+@import "../../../App.scss";
+
+.product-card {
+	width: 90%;
+	background-color: white;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column ;
+	overflow: scroll;
+	.product-card__infos {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		.product-card__infos__ref {
+			background-color: blanchedalmond;
+			font-size: small;
+		}
+		input {
+			background-color: blanchedalmond;
+			height: 25px;
+			border-radius: 3px;
+		}
+	}
+	.product-card__pictures {
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+		.product-card__pictures__container {
+			margin: 5px;
+			width: 50%;
+			max-height: 100%;
+			height: max-content;
+			position: relative;
+			img {
+				width: 100%;
+				max-height: 100%;
+			}
+			.product-card__pictures__container__delete {
+				color: $color-error;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				cursor: pointer;
+				font-size: 20px;
+				background-color: rgba(0, 0, 0, 0.381);
+			}
+		}
+	}
+	.product-card__close {
+		cursor: pointer;
+		padding: 5px;
+	}
+}

@@ -1,0 +1,81 @@
+@import "../../App.scss";
+
+.categories-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 300px;
+	height: 40px;
+	margin: 20px auto;
+	border-radius: 4px;
+	background-color: grey;
+	* {
+		border-radius: 4px;
+		background-color: grey;
+		align-content: center;
+		text-align: center;
+	}
+}
+
+.admin-active {
+	background-color: royalblue;
+	color: white;
+}
+
+//users
+
+.user-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 1200px) {
+	.user-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.user-search {
+	height: 30px;
+	width: 200px;
+	border-radius: 4px;
+	background-color: antiquewhite;
+	margin: 5px;
+}
+
+.users-list {
+	display: grid;
+	grid-template-rows: repeat(10, 1fr);
+	height: 100%;
+	gap: 10px;
+	width: 95%;
+	margin: auto;
+	.users-list__user {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		background-color: blanchedalmond;
+		height: 35px;
+		box-sizing: border-box;
+		width: 100%;
+		.users-list__user__email {
+			font-size: small;
+		}
+		.users-list__user__id {
+			font-size: x-small;
+		}
+	}
+}
+
+.users-page {
+	display: flex;
+	flex-direction: row;
+	div {
+		padding: 8px;
+		margin: 3px;
+		cursor: pointer;
+		border-radius: 100%;
+	}
+	.inactive {
+		color: gray;
+	}
+}

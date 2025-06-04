@@ -1,0 +1,148 @@
+{
+    "login": {
+        "wrong_password" : "Mot de passe incorrect",
+        "non_existing_user" : "Utilisateur non existant",
+        "success" : "Vous êtes maintenant connecté",
+        "email" : "Adresse Email",
+        "password" : "Mot de passe",
+        "submit" : "Se connecter",
+        "signin" : "S'inscrire?"
+    },
+    "signin": {
+        "invalid_password" : "Mot de passe non valide",
+        "invalid_email" : "Adresse email non valide",
+        "invalid_birthdate" : "Date de naissance invalide",
+        "existing account" : "Un compte existe deja avec cette adresse email",
+        "success" : "Compte créé avec succes",
+        "email" : "Adresse Email",
+        "firstname" : "Prénom",
+        "birthdate" : "Date d'anniversaire",
+        "lastname" : "Nom de famille",
+        "password" : "Mot de passe",
+        "password-infos" : "Votre mot de passe doit au minimum contenir 12 characteres, 1 majuscule, 1 minuscule, 1 chiffre et un charactere special.",
+        "submit" : "S'inscrire",
+        "signin" : "Se connecter?"
+    },
+    "forgotten": {
+        "email": "Votre email",
+        "email-sent": "Email envoyé",
+        "send-email": "Envoyer un email"
+    },
+    "home": {
+        "cta": "Chiner en ligne",
+        "to_agenda": "Prochaine ouverture?",
+        "main-quote": "\"M'LaBrocante la brocante qu'on aime\"",
+        "featured-products": "Nos objets favoris",
+        "secure-payment": "Paiement securisé",
+        "secure-payment-text": "Paiement en ligne securisé via Stripe",
+        "global-shipping": "Livraison en Francer",
+        "global-shipping-text": "Livraison en France métropolitaine et outre-mer assurée par la poste",
+        "delivery-on-quote": "Livraison sous devis",
+        "delivery-on-quote-text": "Nous proposons un service de livraison sous devis en France métropolitaine pour les objets non disponibles à la livraison."
+    },
+    "agenda": {
+        "hours": "Heure(s)",
+        "last-announces": "Nos dernières annonces"
+    },
+    "catalog": {
+        "quantity": "Quantite",
+        "left": "restant(es)",
+        "special-delivery-available": "Nous proposons un service de livraison sur devis pour ce produit",
+        "add-to-basket": "Ajouter au panier",
+        "delivery-not-available": "Ce produit n'est pas disponible en livraison",
+        "product-added-to-cart": "Produit ajoute au panier",
+        "not-valid-quantity": "Quantite invalide",
+        "advanced-search": "Recherche avancee",
+        "filter-by": "Filtrer par",
+        "filter-by-new": "plus récent",
+        "filter-by-old": "plus ancien",
+        "filter-by-expensive": "plus cher",
+        "filter-by-cheap": "moins cher",
+        "sold-also": "Produits déjà vendus"
+    },
+    "footer": {
+        "contact-us": "Nous contacter",
+        "our-plateforms": "Nos plateformes",
+        "contact-button": "Vous souhaitez nous contacter?"
+    },
+    "account": {
+        "cart-title": "Panier",
+        "settings-title": "Paramètres",
+        "settings": {
+            "personnal-infos": "Informations personnelles",
+            "firstname": "Prénom",
+            "lastname": "Nom de famille",
+            "phone-number": "Numero de telephone",
+            "update-infos": "Mettre a jour les informations",
+            "old-password": "Ancien mot de passe",
+            "new-password": "Nouveau mot de passe",
+            "update-password": "Mettre à jour le mot de passe",
+            "email-validated": "Adresse email validée",
+            "send-validation-email": "Envoyer l'email de validation",
+            "send-validation-email-text": "Faire valider votre adresse email nous permet de s'assurer que vous êtes le proprietaire de cette adresse",
+            "deconnect": "Se deconnecter"
+        },
+        "cart": {
+            "valid-cart": "Valider votre panier",
+            "your-cart": "Votre panier",
+            "quantity": "Quantité",
+            "not-valid-quantity": "Quantité invalide",
+            "quantity-too-hight": "Quantité supérieure à la quantité disponible",
+            "product-not-found": "Ce produit n'existe pas/plus",
+            "product-quantity-edited": "Quantité mise à jour",
+            "product-deleted-from-cart": "Produit supprime du panier",
+            "cart-item-not-found": "Ce produit n'est pas dans votre panier"
+        }
+    },
+    "valid-cart": {
+        "title": "Validation du panier",
+        "adress-form": "Informations de livraison",
+        "are-you-sure": "Valider votre panier?",
+        "firstname": "Prénom",
+        "lastname": "Nom de famille",
+        "email": "Adresse email",
+        "phone": "Télephone",
+        "line0": "Raison sociale (facultatif)",
+        "line1": "Rue et numéro de rue/d'appartement",
+        "line2": "Batiment/immeuble (facultatif)",
+        "line3": "Residence (facultatif)",
+        "postal-code": "Code postal",
+        "city": "Ville",
+        "country": "Pays",
+        "door-code": "Code de la porte (facultatif)",
+        "door-code2": "Code de la porte 2(facultatif)",
+        "intercom": "Numero d'intercom(facultatif)",
+        "submit-adress": "Confirmer mon adresse",
+        "under-total": "Sous-total",
+        "shipping-price": "Frais de livraison",
+        "total-price": "Prix total",
+        "no-cart": "Pas de panier",
+        "card-error": "Erreur lors du paiement",
+        "invalid-card": "Carte non valide",
+        "address-not-valid": "Adresse non valide",
+        "vat": "TVA",
+        "pay": "Payer",
+        "shipping-errors": {
+            "30223": "Le courriel du destinataire est incorrect",
+            "30221": "Le numéro de portable du destinataire est incorrect",
+            "30214": "La ville du destinataire est incorrecte",
+            "30213": "Le code pays ou le code postal du destinataire est incorrect pour le code produit fourni",
+            "30212": "Le code postal du destinataire ne correspond pas au pays",
+            "30065": "Le nom de l'expéditeur n'a pas été transmis",
+            "30043": "Le prénom de l'expéditeur n'a pas été transmis",
+            "30046": "L'email de l'expéditeur est incorrect",
+            "30047": "Le téléphone de l'expéditeur est incorrect",
+            "30100": "Le numéro / libellé de voie de l'expéditeur n'a pas été transmis"
+        }
+    },
+    "cart-validated": {
+        "your-cart-was-validated": "Votre panier a ete validé avec success!",
+        "your-cart-was-validated-text": "Nous vous contacterons et vous preleverons lorsque la commande sera confirmée.",
+        "thank-you": "M'LaBrocante vous remercit"
+    },
+    "france": "France",
+    "deutschland": "Allemagne",
+    "belgium": "Belgique",
+    "luxemburg": "Luxembourg",
+    "netherland": "Pays-Bas"
+}

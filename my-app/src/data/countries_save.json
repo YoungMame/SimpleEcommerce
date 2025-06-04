@@ -1,0 +1,17 @@
+{  
+	"DEUTSCHLAND": {
+    "country_code":"DEU",
+    "text":"deutschland"
+  },
+  "BELGIUM": {
+    "country_code":"BEL",
+    "text":"belgium"
+  },
+  "LUXEMBURG": {
+    "country_code":"LUX",
+    "text":"luxemburg"
+  },
+  "NETHERLAND": {
+    "country_code":"NET",
+    "text":"netherland"
+  }}

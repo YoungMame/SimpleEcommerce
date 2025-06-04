@@ -1,0 +1,11 @@
+@import "../../App.scss";
+
+.cart-validated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    h1 {
+        font-size: large;
+    }
+}

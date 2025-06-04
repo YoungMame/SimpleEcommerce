@@ -1,0 +1,61 @@
+@import "../../App.scss";
+
+.agenda {
+    min-height: 900px;
+    h2 {
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+.announces-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px;
+    .announces-list__announce {
+        height: 500px;
+        padding: 10px;
+        border: 1px dashed $color-secondary;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        .announces-list__announce__title {
+            font-size: large;
+            margin: 4px 0px;
+        }
+        .announces-list__announce__text {
+            font-size: large;
+            overflow: auto;
+            min-height: 40px;
+            border: 1px dashed black;
+        }
+        .announces-list__announce__author {
+            opacity: 0.9;
+        }
+        .announces-list__announce__infos {
+            display: flex;
+            height: 30%;
+            flex-direction: column;
+            justify-content: end;
+        }
+        img {
+            height: 300px;
+            max-width: 100%;
+            max-height: 240px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .announces-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .announces-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

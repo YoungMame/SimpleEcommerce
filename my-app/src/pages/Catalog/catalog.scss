@@ -1,0 +1,197 @@
+@import "../../App.scss";
+
+.catalog__head {
+    display: flex;
+    margin: 5px;
+    flex-direction: row;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+    width: fit-content;
+    input {
+        height: 40px;
+        width: 200px;
+        border: 1px solid rgba(0, 0, 0, 0.438);
+        border-width: 0px 1px 0px 0px;
+    }
+}
+
+.catalog__foot {
+    width: 100%;
+    .catalog__foot__pagination {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        justify-content: space-around;
+        .min {
+            cursor: pointer;
+        }
+        .max {
+            cursor: pointer;
+        }
+        .less {
+            cursor: pointer;
+        }
+        .more {
+            cursor: pointer;
+        }
+        .catalog__foot__pagination__items {
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .catalog__foot__pagination__items__item {
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+        .catalog__foot__pagination__items > :first-child {
+            border: 1px solid $color-primary;
+        }
+    }
+}
+
+.catalog__flex {
+    display: flex;
+    flex-direction: row;
+    .catalog__flex__filters {
+        display: flex;
+        flex-direction: column;
+        * {
+            margin: 5px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .catalog__flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.catalog__flex__products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px;
+    .catalog__flex__products__product {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: 400px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 5px;
+        margin: 30px;
+        cursor: pointer;
+        img {
+            border-radius: 5px;
+            margin: auto;
+            width: 100%;
+            max-width: 100%;
+            height: 70%;
+            object-fit: cover;
+        }
+        h5 {
+            font-size: x-large;
+            margin: 10px 10px;
+        }
+        p {
+            font-size: large;
+            margin: 10px 20px;
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .catalog__flex__products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .catalog__flex__products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .catalog__flex__products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.catalog__product-card {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding: 5px;
+    overflow: auto;
+    .catalog__product-card__carousel-container {
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+    }
+    .catalog__product-card__close {
+        font-size: x-large;
+        width: fit-content;
+        padding: 20px;
+        cursor: pointer;
+    }
+    .catalog__product-card__infos {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        .ref {
+            font-size: small;
+            color: $color-tertiary;
+        }
+        .title {
+            margin: 10px 30px;
+            width: fit-content;
+            font-size: xx-large;
+            color: $color-secondary;
+        }
+        .price {
+            font-size: x-large;
+            color: $color-secondary;
+        }
+        .description {
+            margin: 20px 0px;
+            color: $color-secondary;
+        }
+        .quantity-label {
+            text-decoration: underline;
+            font-size: large;
+            color: $color-secondary;
+        }
+        .quantity-input {
+            font-size: large;
+            width: 60px;
+            border: 1px solid $color-tertiary;
+            color: $color-secondary;
+        }
+        .quantity-left {
+            color: $color-tertiary;
+        }
+        .buy-button {
+            width: fit-content;
+            margin: 40px auto;
+            border-radius: 0px;
+            font-size: x-large;
+        }
+        .buy-button:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.catalog__product-card__carousel__image {
+    width: 100%;
+}
+
+
